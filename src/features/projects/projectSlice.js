@@ -9,15 +9,15 @@ const projectSlice = createSlice({
   initialState,
   reducers: {
 
-    // ✅ CREATE
+    // Create 
     addProject: (state, action) => {
       state.projects.push({
         ...action.payload,
-        name: action.payload.title // map title → name
+        name: action.payload.title 
       });
     },
 
-    // ✅ UPDATE
+    // update make changes
     updateProject: (state, action) => {
       const index = state.projects.findIndex(
         p => p.id === action.payload.id
@@ -31,7 +31,7 @@ const projectSlice = createSlice({
       }
     },
 
-    // ✅ DELETE
+    // Delete
     deleteProject: (state, action) => {
       state.projects = state.projects.filter(
         p => p.id !== action.payload
@@ -44,7 +44,7 @@ const projectSlice = createSlice({
 export const {
   addProject,
   updateProject,
-  deleteProject   // 🔥 NOW EXISTS
+  deleteProject   
 } = projectSlice.actions;
 
 export default projectSlice.reducer;

@@ -48,7 +48,7 @@ function TaskForm({ existingTask, onClose }) {
       employeeId: parseInt(data.employeeId),
       eta: data.eta,
       referenceImage: imagePreview,
-      status: data.status // ✅ FIXED
+      status: data.status 
     };
 
     if (existingTask) {

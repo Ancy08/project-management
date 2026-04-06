@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  DndContext,
-  closestCenter,
-  KeyboardSensor,
-  PointerSensor,
-  useSensor,
-  useSensors,
-} from "@dnd-kit/core";
-import {
-  SortableContext,
-  sortableKeyboardCoordinates,
-  verticalListSortingStrategy,
-} from "@dnd-kit/sortable";
-import {
-  useSortable,
-} from "@dnd-kit/sortable";
+import {DndContext,closestCenter,KeyboardSensor,PointerSensor,useSensor,useSensors} from "@dnd-kit/core";
+import {SortableContext,sortableKeyboardCoordinates,verticalListSortingStrategy,} from "@dnd-kit/sortable";
+import {useSortable,} from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { updateTaskStatus } from "./taskSlice";
 import TaskCard from "./TaskCard";

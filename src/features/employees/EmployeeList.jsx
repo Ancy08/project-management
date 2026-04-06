@@ -73,7 +73,7 @@ function EmployeeList() {
         </div>
       )}
 
-      {/* View Modal */}
+       {/* View Modal */}
       <Modal
         isOpen={!!viewingEmployee}
         onClose={() => setViewingEmployee(null)}
